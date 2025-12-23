@@ -1,0 +1,674 @@
+<!--Разработчик Филатова Ю.Д.-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремкомплекты</title>
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="icon" href="images/header/logo.png">
+</head>
+
+<body>
+    <div class="btn-up btn-up_hide"></div>
+    <!--HEADER-->
+    <header>
+        <div class="fix">
+            <div class="mini_header">
+                <div class="info_mini_header">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/header/logo.png" alt=""></a>
+                        <div class="name_logo">
+                            <p>Вологодский <br>подшипниковый <br>завод</p>
+                        </div>
+                    </div>
+                    <div class="menu_mini_header">
+                        <div class="gl"><a href="#">Главная</a></div>
+                        <a href="#cont">Контакты</a>
+                        <a href="#"><img src="images/header/ava.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Бургер меню-->
+            <button class="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </button>
+
+            <!-- Оверлей для закрытия меню -->
+            <div class="menu-overlay"></div>
+
+            <!-- Мобильное меню -->
+            <div class="mobile-menu">
+                <button class="close-menu">×</button>
+                <nav class="mobile-nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="mobile-menu-item">О нас </a>
+                            <ul class="mobile-submenu">
+                                <li><a href="history.html">История</a></li>
+                                <li><a href="managers.html">Руководители предприятия</a></li>
+                                <li><a href="counterfeit.html">Контрафакт</a></li>
+                                <li><a href="license.html">Лицензия</a></li>
+                                <li><a href="rent.html">Аренда помещений</a></li>
+                                <li><a href="realty.html">Недвижимое имущество</a></li>
+                                <li><a href="service.html">Служба продаж и снабжения</a></li>
+                                <li><a href="yp.html">Управление по работе с персоналом и соц.развитию</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="select"><a href="products.html" class="mobile-menu-item">Продукция </a></div>
+                            <ul class="mobile-submenu">
+                                <li><a href="catalog.html">Каталог</a></li>
+                                <li><a href="carcatalog.html">Автокаталог</a></li>
+                                <li><a href="otherproducts.html">Прочая продукция</a></li>
+                                <li><a href="individualpackaging.html">Подшипники в упаковке</a></li>
+                                <li><a href="repairkits.html">Ремкомплекты и комплекты ГРМ</a></li>
+                                <li><a href="assembledproducts.html">Изделия в сборе</a></li>
+                                <li><a href="railwayrings.html">ЖД подшипники и кольца</a></li>
+                                <li><a href="bicycle.html">Велосипедные подшипники</a></li>
+                                <li><a href="conveyorrollers.html">Конвейерные ролики</a></li>
+                                <li><a href="rollerbearings.html">Роликоподшипники</a></li>
+                                <li><a href="stainlesssteel.html">Подшипники из нерж. стали</a></li>
+                                <li><a href="order.html">Заказ продукции и услуги</a></li>
+                                <li><a href="fitness.html">Для фитнес-индустрии</a></li>
+                                <li><a href="repair.html">Ремонт асинхронных двигателей</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="new.html">Новости</a></li>
+                        <li><a href="#">Дилеры</a></li>
+                        <li><a href="#">Качество</a></li>
+                        <li><a href="#">Тендеры</a></li>
+                        <li>
+                            <a href="#" class="mobile-menu-item">Закуп </a>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">Металл</a></li>
+                                <li><a href="#">Горюче-смазочные материалы</a></li>
+                                <li><a href="#">Химические материалы</a></li>
+                                <li><a href="#">Полиамиды и пластмасса</a></li>
+                                <li><a href="#">Резина</a></li>
+                                <li><a href="#">Картон, бумага</a></li>
+                                <li><a href="#">Электроматериалы</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Кодекс поставщика</a></li>
+                        <li>
+                            <a href="#" class="mobile-menu-item">Персонал </a>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">Кадровый резерв</a></li>
+                                <li><a href="#">Стажировка</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Охрана труда</a></li>
+                        <li><a href="#">Образовательная деятельность</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Раскрывающееся меню-->
+            <div class="for_menu">
+                <div class="menu">
+                    <nav>
+                        <ul class="topmenu">
+                            <li><a href="" class="submenu-link">О нас </a>
+                                <ul class="submenu">
+                                    <li><a href="history.html">История</a></li>
+                                    <li><a href="managers.html">Руководители предприятия</a></li>
+                                    <li><a href="counterfeit.html">Контрафакт</a></li>
+                                    <li><a href="license.html">Лицензия</a></li>
+                                    <li><a href="rent.html">Аренда помещений</a></li>
+                                    <li><a href="realty.html">Недвижимое имущество</a></li>
+                                    <li><a href="service.html">Служба продаж и снабжения</a></li>
+                                    <li><a href="yp.html">Управление по работе с персоналом и соц.развитию</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="select">
+                                    <a href="products.html" class="submenu-link">Продукция </a>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="catalog.html">Каталог</a></li>
+                                    <li><a href="carcatalog.html">Автокаталог</a></li>
+                                    <li><a href="otherproducts.html">Прочая продукция</a></li>
+                                    <li><a href="individualpackaging.html">Подшипники в упаковке</a></li>
+                                    <li class="select2"><a href="repairkits.html">Ремкомплекты и комплекты ГРМ</a></li>
+                                    <li><a href="assembledproducts.html">Изделия в сборе</a></li>
+                                    <li><a href="railwayrings.html">ЖД подшипники и кольца</a></li>
+                                    <li><a href="bicycle.html">Велосипедные подшипники</a></li>
+                                    <li><a href="conveyorrollers.html">Конвейерные ролики</a></li>
+                                    <li><a href="rollerbearings.html">Роликоподшипники</a></li>
+                                    <li><a href="stainlesssteel.html ">Подшипники из нерж. стали</a></li>
+                                    <li><a href="order.html">Заказ продукции и услуги</a></li>
+                                    <li><a href="fitness.html">Для фитнес-индустрии</a></li>
+                                    <li><a href="repair.html">Ремонт асинхронных двигателей</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="new.html">Новости</a></li>
+                            <li><a href="#">Дилеры</a></li>
+                            <li><a href="#">Качество</a></li>
+                            <li><a href="#">Тендеры</a></li>
+                            <li><a href="#" class="submenu-link">Закуп </a>
+                                <ul class="submenu">
+                                    <li><a href="#">Металл</a></li>
+                                    <li><a href="#">Горюче-смазочные материалы</a></li>
+                                    <li><a href="#">Химические материалы</a></li>
+                                    <li><a href="#">Полиамиды и пластмасса</a></li>
+                                    <li><a href="#">Резина</a></li>
+                                    <li><a href="#">Картон, бумага</a></li>
+                                    <li><a href="#">Электроматериалы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Кодекс поставщика</a></li>
+                            <li><a href="#" class="submenu-link">Персонал </a>
+                                <ul class="submenu">
+                                    <li><a href="#">Кадровый резерв</a></li>
+                                    <li><a href="#">Стажировка</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Охрана труда</a></li>
+                            <li><a href="#">Образовательная дея-ть</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--MAIN-->
+    <main>
+        <div class="zagolovok2" id="vpz">
+            Ремкомплекты
+        </div>
+        <div class="opisanie2">
+            Оперативно реагируя на запросы современного рынка, ЗАО «ВПЗ» осуществляет реализацию ремкомплектов для
+            реализации предприятиям розничной торговли.
+        </div>
+
+        <!--Карточки ремкомплектов в упаковке-->
+
+        <div class="cards_yp">
+            <div class="card_yp">
+                <div class="foto_yp3">
+                    <a href="images/bearings/rem1.png" target="_blank"><img src="images/bearings/rem1.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Подшипник 256706АКЕ12, гайка 2М20, шайба 2108-3104079, стопорное кольцо А60
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: комплект ступичного подшипника 256706АКЕ12 <br>
+                    Применение: ВАЗ 1118, ВАЗ 2170
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/bearings/rem2.png" target="_blank"><img src="images/bearings/rem2.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Подшипник 256707А1КЕ12, гайка 2М20, шайба 2108-3103079, стопорное кольцо А68
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: комплект ступичного подшипника 256707А1КЕ12 <br>
+                    Применение: ВАЗ 1118, ВАЗ 2170
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/bearings/rem3.png" target="_blank"><img src="images/bearings/rem3.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Подшипник 256809АКЕ12, гайка 2М20, шайба 2108-3103079, стопорное кольцо А80
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: комплект ступичного подшипника 256809АКЕ12<br>
+                    Применение: ВАЗ 21214
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/bearings/rem4.png" target="_blank"><img src="images/bearings/rem4.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Подшипник 256908А1КЕ12, гайка 2М20, шайба 2108-3103079, стопорное кольцо А72
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: комплект ступичного подшипника 256908А1КЕ12<br>
+                    Применение: Lada Largus, Renault Logan, Renault Kangoo
+                </div>
+            </div>
+        </div>
+
+        <!-- Вторая часть  -->
+        <div class="cards_yp">
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/bearings/rem5.png" target="_blank"><img src="images/bearings/rem5.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Подшипник 256907АКЕ12, гайка 2М20, шайба 2108-3103079, стопорное кольцо 2108-3103032
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: комплект ступичного подшипника 256907АКЕ12<br>
+                    Применение: ВАЗ-2010, ВАЗ-2108, ВАЗ-2109, ВАЗ-21099, ВАЗ-2114, ВАЗ-2115
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+
+                </div>
+                <div class="card_yp_name">
+
+                </div>
+                <div class="card_yp_opis">
+
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+
+                </div>
+                <div class="card_yp_name">
+
+                </div>
+                <div class="card_yp_opis">
+
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+
+                </div>
+                <div class="card_yp_name">
+
+                </div>
+                <div class="card_yp_opis">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="zagolovok3" id="pod_yp">
+            Комплекты ГРМ
+        </div>
+        <div class="opisanie2">
+            ЗАО «Вологодский подшипниковый завод» в сотрудничестве с фирмой «ContiTech» (Германия) реализует
+            ремкомплекты ГРМ для продажи предприятиям розничной торговли. Предлагаются следующие ремкомплекты ГРМ в
+            индивидуальной упаковке:
+        </div>
+
+        <!--Карточки ремней ГРМ в упаковке-->
+
+        <div class="cards_yp">
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/grm/grm527.png" target="_blank"><img src="images/grm/grm527.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Ремень “Gates” 5521 или ремень БРТ, ролик “VBF” 2108-1006120 (830900АЕ2) для 8-ми клапанных
+                    двигателей семейства ВАЗ
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: ГРМ 527 <br>
+                    Применение: ОКА 1111, 11113, ВАЗ 21081, 21091, 2108, 2109, 21099, 21083, 21093, 2110, 2111, 21121,
+                    11173, 11183, 11193, 21101, 21112, 21134, 21144, 21154, 21701
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/grm/grm996.png" target="_blank"><img src="images/grm/grm996.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Ремень“Gates”5539 или ремень БРТ и ролики “VBF” 2112-1006120 (830900АЕ1) и 2112-1006135 (830700АЕ)
+                    для 16-ти клапанных двигателей семейства ВАЗ
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: ГРМ 996 <br>
+                    Применение: ВАЗ 21103, 2112, 21113, 21104, 21114, 21124.
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/grm/grm1137.png" target="_blank"><img src="images/grm/grm1137.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Ремень“Gates” или ремень БРТ и ролик “VBF” 21126-1006238, ролик опорный “VBF” 21126-1006135
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: ГРМ 1137<br>
+                    Применение: ВАЗ 2170
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/grm/grm988.png" target="_blank"><img src="images/grm/grm988.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Ремень БРТ и ролик “VBF” 988  
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: ГРМ 988  <br>
+                    Применение: "Renault" Logan 1,4 л;<br>
+                           1,6л, 8-ми кл.
+                </div>
+            </div>
+        </div>
+
+        <!-- Вторая часть  -->
+        <div class="cards_yp">
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/grm/grm887.png" target="_blank"><img src="images/grm/grm887.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Ремень“Gates”  и ролик “VBF” 887-1 и  “VBF” 887-2  
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: ГРМ 887 <br>
+                    Применение: "Chevrolet"<br>
+                    Aveo<br>
+                    Lacetti 1,4л;1,6л;8-ми кл.<br>
+                    Lanos 1,4л; 8-ти кл.<br>
+                    1,6л; 16-ти кл.<br>
+                    "Daewoo Nexia" 1,5л; 16-ти кл.
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+                    <a href="images/grm/grm937.png" target="_blank"><img src="images/grm/grm937.png" alt=""></a>
+                </div>
+                <div class="card_yp_name">
+                    Ремень“Gates” и ролики  “VBF” 937-2
+                </div>
+                <div class="card_yp_opis">
+                    Обозначение: ГРМ 937  <br>
+                    Применение: "Hyndai" Elantra 2.0
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+
+                </div>
+                <div class="card_yp_name">
+
+                </div>
+                <div class="card_yp_opis">
+
+                </div>
+            </div>
+
+            <div class="card_yp">
+                <div class="foto_yp">
+
+                </div>
+                <div class="card_yp_name">
+
+                </div>
+                <div class="card_yp_opis">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="zagolovok3" id="pod_yp">
+            Почему именно готовый ремкомплект ГРМ?
+        </div>
+        <div class="opisanie2">
+            Превратите сложный ремонт в простое и надежное решение. Готовый ремонтный комплект - это не просто набор деталей, а продуманная система для безупречной работы вашего двигателя.
+        </div>
+
+        <!--Первый ряд преимуществ-->
+        <div class="preims">
+            <div class="preim">
+                <div class="foto_preim">
+                    <img src="images/grm/1.png" alt="">
+                </div>
+                <div class="name_preim">
+                    Качество оригинала
+                </div>
+                <div class="opis_preim">
+                    Высокая точность подгонки всех деталей
+                </div>
+            </div>
+
+            <div class="preim">
+                <div class="foto_preim">
+                    <img src="images/grm/2.png" alt="">
+                </div>
+                <div class="name_preim">
+                    Надежность на 100%
+                </div>
+                <div class="opis_preim">
+                    Комплексная замена для полного спокойствия
+                </div>
+            </div>
+
+            <div class="preim">
+                <div class="foto_preim">
+                    <img src="images/grm/3.png" alt="">
+                </div>
+                <div class="name_preim">
+                    Всё необходимое
+                </div>
+                <div class="opis_preim">
+                    Ничего лишнего - только продуманный набор
+                </div>
+            </div>
+        </div>
+
+        <!--Второй ряд преимуществ-->
+        <div class="preims">
+            <div class="preim">
+                <div class="foto_preim">
+                    <img src="images/grm/4.png" alt="">
+                </div>
+                <div class="name_preim">
+                    Индивидуальный подбор
+                </div>
+                <div class="opis_preim">
+                    Учет марки и технических особенностей авто
+                </div>
+            </div>
+
+            <div class="preim">
+                <div class="foto_preim">
+                    <img src="images/grm/5.png" alt="">
+                </div>
+                <div class="name_preim">
+                    Простота установки
+                </div>
+                <div class="opis_preim">
+                    Самостоятельно или на СТО - решайте сами!
+                </div>
+            </div>
+
+            <div class="preim">
+                <div class="foto_preim">
+                    <img src="images/grm/6.png" alt="">
+                </div>
+                <div class="name_preim">
+                    Защита двигателя
+                </div>
+                <div class="opis_preim">
+                    Исключаем риск серьезных поломок
+                </div>
+            </div>
+        </div>
+
+        <div class="none"></div>
+    </main>
+
+    <!--Форма связи-->
+    <div class="forms_map">
+        <div class="group">
+            <div class="form_map" id="form">
+                <form action="" method="post">
+                    <div class="t">
+                        Свяжитесь с нами
+                    </div>
+
+                    <input type="text" name="name" required placeholder="Ваше имя" /><br />
+                    <hr>
+
+                    <input type="email" name="email" required placeholder="Ваш Email" /><br />
+                    <hr>
+                    <div class="phone-input-container">
+                        <div class="country-selector">
+                            <div class="selected-country" onclick="toggleCountryList()">
+                                <img src="images/flags/ru.svg" alt="RU" id="country-flag">
+                                <span id="country-code">+7</span>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="country-list" id="country-list">
+                                <div class="country-item" data-code="7" data-flag="ru">
+                                    <img src="images/flags/ru.svg" alt="RU">
+                                    <span>Россия (+7)</span>
+                                </div>
+                                <div class="country-item" data-code="375" data-flag="by">
+                                    <img src="images/flags/by.svg" alt="BY">
+                                    <span>Беларусь (+375)</span>
+                                </div>
+                                <div class="country-item" data-code="7" data-flag="kz">
+                                    <img src="images/flags/kz.svg" alt="KZ">
+                                    <span>Казахстан (+7)</span>
+                                </div>
+                                <div class="country-item" data-code="1" data-flag="us">
+                                    <img src="images/flags/us.svg" alt="US">
+                                    <span>США (+1)</span>
+                                </div>
+                                <div class="country-item" data-code="49" data-flag="de">
+                                    <img src="images/flags/de.svg" alt="DE">
+                                    <span>Германия (+49)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="tel" id="phone-input" placeholder="(999) 123-45-67" maxlength="15"
+                            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                    </div>
+                    <!-- <input type="number" name="phone" required placeholder="+7 (999) 999-99-99" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" /><br /> -->
+                    <hr>
+
+                    <!--<textarea name="message" placeholder="Ваше сообщение (необязательно)" style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea><br />-->
+                    <!--<hr>-->
+
+                    <div class="politika">
+                        <p>Отправляя заявку, Вы соглашаетесь на обработку персональных данных в соответствии с <a
+                                href="docs/policy.pdf">Политикой конфиденциальности</a> и <a
+                                href="docs/processing_conditions.pdf">Условиях обработки</a>
+                            ЗАО «ВПЗ».</p>
+                    </div>
+
+                    <button type="submit">Отправить заявку</button>
+                </form>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.3431983462485!2d39.80339268479353!3d59.20582225343884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ae982ae8d4ce33%3A0xb67ee6fa91de2b53!2z0JLQvtC70L7Qs9C-0LTRgdC60LjQuSDQv9C-0LTRiNC40L_QvdC40LrQvtCy0YvQuSDQt9Cw0LLQvtC0!5e0!3m2!1sru!2sru!4v1756191020038!5m2!1sru!2sru"
+                        width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="fon_footer">
+            <img src="images/footer/fon.png" alt="">
+        </div>
+        <!--Подвал делим на 3 части-->
+        <div class="share_footer">
+            <div class="parts">
+                <div class="one_footer">
+                    <div class="logo_footer">
+                        <img src="images/footer/logotip.png" alt="">
+                    </div>
+                    <div class="rekvisit">
+                        ИНН: 3525027150<br>
+                        КПП: 352501001<br>
+                        ОГРН: 1023500880369<br>
+                        Вологодское отделение № 8638 СБ РФ г.Вологда,<br>
+                        р/счет: 40702810812000103289<br>
+                        кор/счет: 30101810900000000644<br>
+                        БИК 041909644<br>
+                        Телефон справочной службы: (8172)26-70-03
+                    </div>
+                </div>
+
+                <div class="two_footer">
+                    <div class="zag_footer">
+                        Разделы
+                    </div>
+                    <div class="razdel_footer">
+                        <a href="#vpz">Ремкомплекты</a><br>
+                        <a href="#pod_yp">Комплекты ГРМ</a><br>
+                        <a href="#pod_yp">Почему именно готовый ремкомплект ГРМ?</a><br>
+                        <a href="#form">Форма связи</a><br>
+                        <a href="#cont">Контакты</a><br>
+                        <!-- <a href="#">Качество</a><br>
+                        <a href="#">Тендеры</a><br>
+                        <a href="#">Закуп</a><br>
+                        <a href="#">Кодекс поставщика</a><br>
+                        <a href="#">Персонал</a> -->
+                    </div>
+                </div>
+
+                <div class="three_footer">
+                    <div class="zag_footer">
+                        Контакты
+                    </div>
+
+                    <div class="tel_poch">
+                        <div class="tel">
+                            <div class="mini">
+                                Телефон:
+                            </div>
+
+                            <div class="znach">
+                                (8172)51-07-79
+                            </div>
+                        </div>
+                        <div class="poch">
+                            <div class="mini">
+                                Email:
+                            </div>
+
+                            <div class="znach">
+                                okid@vbf.ru
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mini">
+                        Адрес:
+                    </div>
+                    <div class="znach">
+                        г. Вологда, Окружное<br>
+                        шоссе, 13
+                    </div>
+
+                    <div class="kont" id="cont">
+                        <a href=""><img src="images/footer/google.png" alt=""></a>
+                        <a href="https://vk.com/vbf_vologda"><img src="images/footer/wk.png" alt=""></a>
+                        <!-- <a href=""><img src="images/footer/wp.png" alt=""></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="mini_footer">©ЗАО «ВПЗ» 2025г.</div>
+        </div>
+    </footer>
+    <!--Подключение скрипта-->
+    <script src="./js/script.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+
+</html>
